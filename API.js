@@ -12,10 +12,12 @@ class API {
     } 
 
   static deleteApart = (id, success, failure) => {
+      setTimeout(()=>{
     fetch(`${serverURL}/apartment/${id}`, { method: 'DELETE' })
       .then(res => res.json())
       .then(success)
       .catch(failure)
+    },1000)
   }
 }
 
