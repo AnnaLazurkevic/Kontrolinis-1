@@ -1,0 +1,70 @@
+{
+"apartment" :[
+    {
+    "id": "1",
+    "type": "house",
+    "owner": {
+      "fullname": "Aruodas.lt",
+      "email": "aurodas@info.lt",
+      "phone": "+370 688 111111"
+    },
+    "roomCount": 2,
+    "squares": 62,
+    "address": {
+      "city": "Vilnius",
+      "country": "Lithuania",
+      "street": "Druskio g.",
+      "number": 88
+    },
+    "price": {
+      "amount": 50,
+      "currency": "$"
+    },
+    "imgSrc": "https://aruodas-img.dgn.lt/object_62_100620321/vilniaus-r-sav-avizieniu-k-murinio-namo.jpg"
+  },
+  {
+    "id": "2",
+    "type": "flat",
+    "owner": {
+      "fullname": "Aruodas.lt",
+      "email": "aurodas@info.lt",
+      "phone": "+370 688 111111"
+    },
+    "roomCount": 3,
+    "squares": 62,
+    "address": {
+      "city": "Vilnius",
+      "country": "Lithuania",
+      "street": "Druskio g.",
+      "number": 88
+    },
+    "price": {
+      "amount": 100000,
+      "currency": "€"
+    },
+    "imgSrc": "https://aruodas-img.dgn.lt/object_62_88738495/kauno-r-sav-giraites-k-abrikosu-g.jpg"
+  },
+  {
+    "id": "3",
+    "type": "cottage",
+    "owner": {
+      "fullname": "Aruodas.lt",
+      "email": "aurodas@info.lt",
+      "phone": "+370 688 111111"
+    },
+    "roomCount": 4,
+    "squares": 88,
+    "address": {
+      "city": "Kaunas",
+      "country": "Lithuania",
+      "street": "Druskio g.",
+      "number": 10
+    },
+    "price": {
+      "amount": 120000,
+      "currency": "€"
+    },
+    "imgSrc": "https://aruodas-img.dgn.lt/object_62_100379039/vilniaus-r-sav-paliepiu-k-lyglaukiu-g.jpg"
+  }
+]
+}
