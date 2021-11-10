@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "name": "kontrolinis-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start-win": "node_modules\\.bin\\json-server --watch db.json",
+    "start-unix": "node_modules/.bin/json-server --watch db.json"
+  },
+  "author": "Anna",
+  "license": "ISC",
+  "description": ""
+}
