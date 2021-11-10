@@ -1,6 +1,6 @@
-class ApartGridComponent{
-    constructor(){
-    
+class ApartGridComponent {
+    constructor() {
+
         this.state = {
             apartment: [],
             loading: false
@@ -8,20 +8,30 @@ class ApartGridComponent{
         this.init();
     }
 
-saveData = (apartment)=>{
-    this.state.apartment = apartment;
-    this.render();
-}
-showError = error=>{console.log(error)};
+    saveData = (apartment) => {
+        this.state = {apartment, loading:false};
+        this.render();
+    }
+    showError = error => { console.log(error) };
 
-    init = ()=>{
-     this.htmlElement = document.createElement('div');
+    getApart = () => API.getApart(this.saveData, this.showError);
+
+    init = () => {
+        this.state.loading = true;
+        this.getApart();
+        this.htmlElement = document.createElement('div');
+        this.render()
     }
 
-    render = () =>
-    console.log(this.state.apartment)
-
-
-
+   
+    render = ()=>{
+        const {loading} = this.state;
+        if (loading){
+            this.htmlElement.innerHTML = 'siunčiama...'
+        }else{
+            this.htmlElement.innerHTML = 'Parsiųsta'
+        }
+    
+}
 
 }
